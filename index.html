@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bokka Yaswanth | Web Developer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      color: #00ffcc;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links a {
+      color: #e0e0e0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #00ffcc;
+    }
+    .section {
+      padding: 4rem 2rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #00ffcc;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      color: #00ffcc;
+      margin-top: 1.5rem;
+    }
+    p, li {
+      margin: 0.4rem 0;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .project-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 2rem;
+    }
+    .project-card {
+      background: #1f1f1f;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #333;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: #00ffcc;
+    }
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .about-intro {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .sticky-profile {
+      position: sticky;
+      top: 100px;
+      flex: 1;
+      min-width: 220px;
+    }
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #00ffcc;
+      margin-bottom: 1rem;
+    }
+    .details-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+    .about-text {
+      flex: 2;
+      min-width: 250px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1f1f1f;
+      color: #888;
+    }
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .about-intro {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Yaswanth</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="yaswanth_resume.pdf" download>Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-intro">
+          <div class="sticky-profile">
+            <img src="myprofile.jpg" alt="Yaswanth Profile" class="profile-img">
+            <div class="details-grid">
+                <div><strong>Name:</strong> BOKKA YASWANTH</div>
+              <div><strong>Date of Birth:</strong> 17-04-2006</div>
+              <div><strong>Gender:</strong> Male</div>
+              <div><strong>Marital Status:</strong> Single</div>
+              <div><strong>Languages:</strong> English, Telugu</div>
+              <div><strong>Father's Name:</strong> Yugandhar</div>
+              <div><strong>Location:</strong> Penugonda, AP 534320</div>
+            </div>
+          </div>
+          <div class="about-text">
+            <p>
+             I'm <strong>Yaswanth</strong>, a Computer Engineering student from Andhra Pradesh, currently pursuing my B.Tech in Artificial Intelligence and Machine Learning (AI & ML) after completing a Diploma in Computer Engineering. I’m passionate about building clean, responsive websites and web applications. I enjoy working with technologies like HTML, CSS, JavaScript, Python,SQL and C++, and I'm always eager to explore AI and machine learning concepts while continuously improving my development skills.
+
+
+            </p>
+
+            <h3>Career Objective</h3>
+            <p>
+              To obtain an entry-level web developer position where I can apply my technical skills, contribute to meaningful projects, and grow professionally in a collaborative environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <h3>Diploma in Computer Engineering (2025)</h3>
+        <p>Bhimavaram Institute of Engineering and Technology – SBTET – 74%</p>
+
+        <h3>S.S.C (2022)</h3>
+        <p>ZP High School, Cherukuwada – 50%</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <h3>Technical</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python, C, C++</li>
+          <li>SQL</li>
+          <li>MS Office (Word, Excel, PowerPoint)</li>
+        </ul>
+
+        <h3>Personal</h3>
+        <ul>
+          <li>Confident and determined</li>
+          <li>Hardworking and quick learner</li>
+          <li>Excellent communication and interpersonal skills</li>
+          <li>Always open to challenges and new learning</li>
+        </ul>
+
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Exploring new technologies</li>
+          <li>Listening to music</li>
+          <li>Working with AI tools</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Mid-Day Meal Management System</h3>
+            <p>A web-based platform for government schools to digitally track and manage the distribution of mid-day meals efficiently.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:yaswanthb1717@gmail.com">yaswanthb1717@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+916302938894">6302938894</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/thenameisyash17" target="_blank">github.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yash-undefined-638a43369" target="_blank">linkedin.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yaswanth. All rights reserved.</p>
+  </footer>
+</body>
+</html>
